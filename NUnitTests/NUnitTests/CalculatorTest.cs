@@ -23,9 +23,8 @@ namespace NUnitTests
         [SetUp]
         public void Setup()
         {
-            Mock<Offset> mockObj = new Mock<Offset>();
-            mockObj.Setup(m => m.Get()).Returns(100);
-            Calculator = new Calculator(mockObj.Object);
+            FakeOffset fake = new FakeOffset();
+            Calculator = new Calculator(fake);
         }
 
         [Test]

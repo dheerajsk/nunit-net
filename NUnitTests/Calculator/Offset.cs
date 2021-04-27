@@ -11,8 +11,7 @@ namespace CCalculator
             // call db
 
             // call api etc
-            throw new Exception("This is for test");
-            //return 100;
+            return 100;
         }
     }
 }
